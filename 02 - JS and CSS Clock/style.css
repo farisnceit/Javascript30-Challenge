@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 10px;
+}
+
+.javascript-container {
+  display: flex;
+  height: 100vh;
+
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+}
+
+.javascript-clock {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 1rem solid #333;
+  padding: 2rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.digital-clock {
+  font-size: 4rem;
+}
+
+.digital {
+  display: inline-block;
+}
